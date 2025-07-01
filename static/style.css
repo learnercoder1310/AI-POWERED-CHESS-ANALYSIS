@@ -1,0 +1,186 @@
+/* Reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Auth button (not used in final buttons, preserved if needed elsewhere) */
+.auth-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #6aa84f;
+  color: white;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.auth-btn:hover {
+  background-color: #4e8d3d;
+}
+
+/* Body with chessboard image as background */
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+
+    background-image: url("/static/image/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header bar */
+header {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 0;
+  width: 100%;
+  border-bottom: 2px solid white;
+}
+
+/* Title */
+h1 {
+  color: white;
+  font-size: 3em;
+  margin: 0;
+}
+
+/* Auth Buttons Container */
+.auth-buttons {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Login and Signup Buttons */
+.signup-btn,
+.login-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.signup-btn:hover,
+.login-btn:hover {
+  background-color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 650px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .signup-btn,
+  .login-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .signup-btn,
+  .login-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+.left-buttons {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.upload-btn,
+.settings-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.upload-btn:hover,
+.settings-btn:hover {
+  background-color: #222;
+}
+
+.upload-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.upload-btn:hover {
+  background-color: #222;
+}
+
+
+
+.about-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about-btn:hover {
+  background-color: #222;
+}
+
+
+
+
+
+
+
