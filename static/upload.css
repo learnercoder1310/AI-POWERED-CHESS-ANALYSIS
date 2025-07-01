@@ -1,105 +1,90 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Upload Page Body */
-  body {
-    min-height: 100vh;
-    overflow-x: hidden;
-    background-image: url("/static/image/background2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Upload Container Card */
-  .upload-container {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 40px 50px;
-    border-radius: 20px;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    color: #ffffff;
-    max-width: 400px;
-    width: 90%;
-  }
-  
-  /* Title */
-  .upload-container h2 {
-    margin-bottom: 25px;
-    font-size: 2.2rem;
-    font-weight: bold;
-  }
-  
-  /* File Input */
-  .upload-container input[type="file"] {
-    display: none;
-  }
-  
-  /* Custom File Label */
-  .upload-container label[for="file-upload"] {
-    display: inline-block;
-    padding: 10px 25px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 2px dashed #ffffff;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #ffffff;
-    margin-bottom: 20px;
-    transition: 0.3s ease;
-  }
-  
-  .upload-container label[for="file-upload"]:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-style: solid;
-  }
-  
-  /* Analyze Button */
-  .upload-container .submit-btn {
-    padding: 12px 30px;
-    font-size: 17px;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #6aa84f, #3e7d2d);
-    color: white;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-  }
-  
-  .upload-container .submit-btn:hover {
-    background-color: #4e8d3d;
-    transform: translateY(-2px);
-  }
-  
-  /* Back Button */
-  .back-btn {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    padding: 10px 18px;
-    border: none;
-    border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .back-btn:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: url("/static/image/background2.jpg") center/cover no-repeat;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.upload-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #fff;
+  max-width: 400px;
+  width: 90%;
+}
+
+.upload-container h2 {
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label[for="file-upload"],
+.submit-btn,
+.back-btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+label[for="file-upload"] {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px dashed #fff;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+label[for="file-upload"]:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-style: solid;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #6aa84f, #3e7d2d);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:hover {
+  background: #4e8d3d;
+  transform: translateY(-2px);
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+ground-color: rgba(0, 0, 0, 0.9);
+}
+
   
