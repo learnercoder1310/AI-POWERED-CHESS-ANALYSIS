@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+
+</head>
+<body>
+
+    <header>
+        <h1>CHESSBOARD ANALYZER</h1>
+    </header>
+    <div class="auth-buttons">
+        <button class="signup-btn">Sign Up</button>
+        <button class="login-btn">Log In</button>
+    </div>
+
+    <div class="left-buttons">
+        <button class="about-btn">About</button>
+        <a href="{{ url_for('upload_image') }}" class="upload-btn">Upload</a>
+        <button class="settings-btn">Settings</button>
+    </div>
+
+    <!-- Team Section Footer -->
+    <footer>
+      <p>
+        Anmol Sharma (221030285)<br>
+        Anshul (221030394)<br>
+        Naviya Tickoo (221030050)<br>
+        Prateek Singh Bisht (221030355)
+      </p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='logic.js') }}"></script>
+</body>
+</html>

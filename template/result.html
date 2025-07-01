@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analysis Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+
+  <a href="{{ url_for('home') }}" class="back-btn">← Back to Home</a>
+
+  <div class="result-container">
+    <h2>Chessboard Analysis</h2>
+    <img src="{{ url_for('static', filename='uploads/' + image_path.split('/')[-1]) }}" alt="Uploaded Image" />
+    
+    <div class="analysis">
+      <h3>Stockfish Analysis:</h3>
+      <pre>{{ analysis }}</pre>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/result.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Image</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css') }}">
+</head>
+<body>
+
+  <a href="{{ url_for('home') }}" class="back-btn">← Back</a>
+
+  <div class="upload-container">
+    <h2>Upload Chessboard Image</h2>
+    <!-- Form for image upload -->
+    <form action="{{ url_for('upload_image') }}" method="POST" enctype="multipart/form-data">
+      <label for="file-upload">📁 Choose File</label>
+      <input type="file" id="file-upload" name="file" accept="image/*" required />
+      <br><br>
+      <button type="submit" class="submit-btn">Analyze</button>
+    </form>
+  </div>
+
+  <script src="{{ url_for('static', filename='upload.js') }}"></script>
+</body>
+</html>
