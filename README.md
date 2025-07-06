@@ -7,6 +7,8 @@ Utilizing the YOLOv8 object detection model for identifying each piece and the S
 ---
 ![image alt](https://github.com/learnercoder1310/AI-POWERED-CHESS-ANALYSIS/blob/a5bb1d0fd15aef189020f155484c0595fd8fa482/final_output/upload_image.png)
 
+![image alt](https://github.com/learnercoder1310/AI-POWERED-CHESS-ANALYSIS/blob/37651ecfa5ada8307b881aa92b2e2b276074fab9/final_output/WhatsApp%20Image%202025-07-06%20at%207.23.59%20PM.jpeg)
+
 ## 🎯 Features
 
 - 📷 **Image-Based Chessboard Detection**  
