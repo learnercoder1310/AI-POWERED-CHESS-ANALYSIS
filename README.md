@@ -5,6 +5,7 @@
 Utilizing the YOLOv8 object detection model for identifying each piece and the Stockfish engine for move calculation, the project offers a seamless blend of AI and strategic gameplay support. Whether you're a casual player or a chess enthusiast, this tool helps you understand the board better and make smarter decisions — all through the power of artificial intelligence.
 
 ---
+![image alt](https://github.com/learnercoder1310/AI-POWERED-CHESS-ANALYSIS/blob/a5bb1d0fd15aef189020f155484c0595fd8fa482/final_output/upload_image.png)
 
 ## 🎯 Features
 
